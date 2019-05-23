@@ -1,0 +1,14 @@
+server:
+  port: 8088
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+spring:
+  thymeleaf:
+    mode: HTML
+    encoding: utf-8
+    # ½ûÓÃ»º´æ
+    cache: false
+  application:
+    name: webService

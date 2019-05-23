@@ -1,0 +1,15 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: redisService
+  redis:
+    database: 0
+    host: localhost
+    password:
+    timeout: 3000
+    port: 6379
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
