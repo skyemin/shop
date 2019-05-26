@@ -1,7 +1,5 @@
 package com.wei.ai.utils;
 
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
 import okhttp3.*;
 
 import java.io.*;
@@ -18,8 +16,8 @@ import java.util.Random;
 public class AiRequestBean {
 
     public static final String ERROR = "error";
-    public static final String APP_ID = "";
-    public static final String APP_KEY = "";
+    public static final String APP_ID = "2116841982";
+    public static final String APP_KEY = "z5ZsCrddvkRNK1cs";
 
     private HashMap<String, Object> mParams = new HashMap<>();
 
@@ -32,7 +30,7 @@ public class AiRequestBean {
         mParams.put("app_id", APP_ID);
         mParams.put("nonce_str", nonce_str);
         mParams.put("time_stamp", time_stamp);
-        byte[] imageData = getBytes("d://2.png");
+        byte[] imageData = getBytes("d://3.png");
         //准备好图片base64数据
         String img64 = Base64Util.encode(imageData);
         mParams.put("image",img64);
@@ -98,13 +96,14 @@ public class AiRequestBean {
     public static void main(String[] args) throws IOException {
         AiRequestBean aiRequestBean = new AiRequestBean();
         String jsonResult = aiRequestBean.request("https://api.ai.qq.com/fcgi-bin/vision/vision_porn");
-        JSONObject jsonObject = JSONObject.parseObject(jsonResult);
+        System.out.println(jsonResult);
+        /*JSONObject jsonObject = JSONObject.parseObject(jsonResult);
         String data = jsonObject.getString("data");
         JSONObject jsonObject1 = JSONObject.parseObject(data);
         JSONArray array = jsonObject1.getJSONArray("tag_list");
         for(int i=0;i<array.size();i++){
             JSONObject jsonObject2 = array.getJSONObject(i);
             System.out.println(jsonObject2.getString("tag_name"));
-        }
+        }*/
     }
 }
