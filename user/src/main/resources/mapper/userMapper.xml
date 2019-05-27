@@ -5,4 +5,8 @@
     <select id="findUserList" resultType="com.wei.model.User">
         select id,name,age from user;
     </select>
+
+    <insert id="insertUser" parameterType="com.wei.model.User">
+        insert user(name,age) VALUES(#{name},#{age})
+    </insert>
 </mapper>

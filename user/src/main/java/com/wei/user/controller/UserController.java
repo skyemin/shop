@@ -69,4 +69,16 @@ public class UserController implements UserServiceApi,RabbitTemplate.ReturnCallb
     public void returnedMessage(Message message, int i, String s, String s1, String s2) {
 
     }
+
+    @RequestMapping("/testInsert")
+    public void testInsert(){
+        try {
+            User user = new User();
+            user.setName("测试");
+            user.setAge(20);
+            userService.insertUser(user);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -1,9 +1,10 @@
 package com.wei.user.service;
 
-import com.wei.user.mapper.UserMapper;
 import com.wei.model.User;
+import com.wei.user.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -21,5 +22,12 @@ public class UserServiceImpl implements UserService{
     @Override
     public List<User> findUserList() {
         return userMapper.findUserList();
+    }
+
+    @Override
+    @Transactional
+    public void insertUser(User user){
+        userMapper.insertUser(user);
+        int i = 1/0;
     }
 }

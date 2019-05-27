@@ -14,4 +14,7 @@ import java.util.List;
 public interface UserMapper {
 
     List<User> findUserList();
+    //插入用户
+    void insertUser(User user);
+
 }

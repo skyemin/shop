@@ -14,4 +14,6 @@ import java.util.List;
 public interface UserService {
     //查询用户列表
     List<User> findUserList();
+    //插入用户
+    void insertUser(User user);
 }
