@@ -8,7 +8,6 @@ import com.wei.user.service.UserService;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -46,13 +45,6 @@ public class UserController implements UserServiceApi,RabbitTemplate.ReturnCallb
         });
         rabbitTemplate.convertAndSend(RabbitMQConfig.USER_EXCHANGE,RabbitMQConfig.USER_BIND_KEY1,"我进来了");
         return userList;
-    }
-
-    @Override
-    @PostMapping("/selectUserById")
-    public User selectUserById(String id) {
-        System.out.println(123);
-        return null;
     }
 
     //降级方法

@@ -1,3 +1,4 @@
+/*
 package com.wei.zuul.filter;
 
 import com.netflix.zuul.ZuulFilter;
@@ -7,23 +8,27 @@ import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
+*/
 /**
  * @Author: weizz
  * @Date: 2019/5/23 14:29
  * @Description:
  * @Version:1.0
- */
+ *//*
+
 @Component
 public class LoginFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
-        /**
+        */
+/**
          pre：请求在被路由之前执行
          routing：在路由请求时调用
          post：在routing和errror过滤器之后调用
          error：处理请求时发生错误调用
-         */
+         *//*
+
         return "pre";
     }
 
@@ -58,3 +63,4 @@ public class LoginFilter extends ZuulFilter {
         }
     }
 }
+*/

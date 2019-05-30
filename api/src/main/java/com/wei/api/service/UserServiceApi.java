@@ -10,6 +10,4 @@ import java.util.List;
 public interface UserServiceApi {
     @ApiOperation("查询用户列表")
     public List<User> getUserList();
-    @ApiOperation("根据id查询")
-    public User selectUserById(String id);
 }

@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ai" />
         <module name="api" />
+        <module name="auth" />
         <module name="model" />
         <module name="order" />
         <module name="pay" />
         <module name="redis" />
+        <module name="search" />
         <module name="server" />
         <module name="user" />
         <module name="web" />
@@ -19,6 +21,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ch8-2-auth-server" target="1.5" />
       <module name="demo" target="1.8" />
       <module name="demo1" target="1.8" />
       <module name="demo2" target="1.8" />
@@ -29,6 +32,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ai" options="-parameters" />
       <module name="api" options="-parameters" />
+      <module name="auth" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="demo1" options="-parameters" />
       <module name="demo2" options="-parameters" />
@@ -36,6 +40,7 @@
       <module name="order" options="-parameters" />
       <module name="pay" options="-parameters" />
       <module name="redis" options="-parameters" />
+      <module name="search" options="-parameters" />
       <module name="server" options="-parameters" />
       <module name="shop" options="" />
       <module name="user" options="-parameters" />
