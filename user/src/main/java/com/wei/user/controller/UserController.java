@@ -9,7 +9,6 @@ import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -31,7 +30,7 @@ public class UserController implements UserServiceApi,RabbitTemplate.ReturnCallb
     RabbitTemplate rabbitTemplate;
 
     @Override
-    @RequestMapping(value = "/getUserList",method = RequestMethod.POST)
+    @RequestMapping(value = "/getUserList")
     @HystrixCommand(fallbackMethod = "test")
     public List<User> getUserList(){
         List<User> userList = userService.findUserList();

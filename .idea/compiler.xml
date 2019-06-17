@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ai" />
         <module name="api" />
-        <module name="auth" />
         <module name="config" />
         <module name="config-client" />
         <module name="model" />
@@ -23,6 +22,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auth" target="1.8" />
       <module name="ch8-2-auth-server" target="1.5" />
       <module name="demo" target="1.8" />
       <module name="demo1" target="1.8" />
