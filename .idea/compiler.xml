@@ -8,8 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ai" />
         <module name="api" />
-        <module name="config" />
-        <module name="config-client" />
+        <module name="config-server" />
         <module name="model" />
         <module name="order" />
         <module name="pay" />
@@ -22,33 +21,33 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="auth" target="1.8" />
-      <module name="ch8-2-auth-server" target="1.5" />
-      <module name="demo" target="1.8" />
-      <module name="demo1" target="1.8" />
-      <module name="demo2" target="1.8" />
-      <module name="user (1)" target="1.8" />
+      <module name="ai" target="1.8" />
+      <module name="api" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="model" target="1.8" />
+      <module name="order" target="1.8" />
+      <module name="pay" target="1.8" />
+      <module name="redis" target="1.8" />
+      <module name="search" target="1.8" />
+      <module name="server" target="1.8" />
+      <module name="shop" target="1.8" />
+      <module name="user" target="1.8" />
+      <module name="web" target="1.8" />
+      <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ai" options="-parameters" />
       <module name="api" options="-parameters" />
-      <module name="auth" options="-parameters" />
-      <module name="config" options="-parameters" />
-      <module name="config-client" options="-parameters" />
-      <module name="demo" options="-parameters" />
-      <module name="demo1" options="-parameters" />
-      <module name="demo2" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="model" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="pay" options="-parameters" />
       <module name="redis" options="-parameters" />
       <module name="search" options="-parameters" />
       <module name="server" options="-parameters" />
-      <module name="shop" options="" />
       <module name="user" options="-parameters" />
-      <module name="user (1)" options="-parameters" />
       <module name="web" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>

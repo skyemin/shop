@@ -3,6 +3,7 @@ package com.wei.user.controller;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.wei.api.service.UserServiceApi;
 import com.wei.model.User;
+import com.wei.user.config.ConfigInfoProperties;
 import com.wei.user.config.RabbitMQConfig;
 import com.wei.user.service.UserService;
 import org.springframework.amqp.core.Message;
@@ -28,6 +29,9 @@ public class UserController implements UserServiceApi,RabbitTemplate.ReturnCallb
 
     @Autowired
     RabbitTemplate rabbitTemplate;
+
+    @Autowired
+    private ConfigInfoProperties configInfoProperties;
 
     @Override
     @RequestMapping(value = "/getUserList")
@@ -71,5 +75,9 @@ public class UserController implements UserServiceApi,RabbitTemplate.ReturnCallb
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    @RequestMapping("/testConfig")
+    public String testConfig(){
+        return configInfoProperties.getConfig();
     }
 }
