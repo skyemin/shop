@@ -1,3 +1,4 @@
+/*
 package com.wei.mq.controller;
 
 import lombok.extern.slf4j.Slf4j;
@@ -13,12 +14,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.UnsupportedEncodingException;
 import java.util.concurrent.*;
 
+*/
 /**
  * @Author: weizz
  * @Date: 2019/7/21 12:09
  * @Description:
  * @Version:1.0
- */
+ *//*
+
 @Slf4j
 @RestController
 @RequestMapping("/tran")
@@ -37,8 +40,10 @@ public class TranController {
                 return thread;
             }
         });
-        transactionMQProducer.setExecutorService(executorService);
-        transactionMQProducer.setTransactionListener(new TransactionListenerImpl());
+       */
+/* transactionMQProducer.setExecutorService(executorService);
+        transactionMQProducer.setTransactionListener(new TransactionListenerImpl());*//*
+
         transactionMQProducer.start();
         try {
             String msg = "测试消息";
@@ -49,4 +54,4 @@ public class TranController {
         }
 
     }
-}
+}*/
