@@ -14,7 +14,7 @@ import org.apache.rocketmq.remoting.common.RemotingHelper;
 public class SyncProducer {
     public static void main(String[] args) throws Exception {
         DefaultMQProducer producer = new DefaultMQProducer("ProducerGroupName");
-        producer.setNamesrvAddr("192.168.1.10:9876");
+        producer.setNamesrvAddr("112.74.90.36:9876");
         producer.start();
 
         for (int i = 1; i < 5; i++) {
