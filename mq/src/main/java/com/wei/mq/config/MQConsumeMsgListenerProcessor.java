@@ -20,6 +20,7 @@ import java.util.List;
 @Slf4j
 public class MQConsumeMsgListenerProcessor implements MessageListenerConcurrently {
 
+
     /**
      *  默认msgs里只有一条消息，可以通过设置consumeMessageBatchMaxSize参数来批量接收消息<br/>
      *  不要抛异常，如果没有return CONSUME_SUCCESS ，consumer会重新消费该消息，直到return CONSUME_SUCCESS

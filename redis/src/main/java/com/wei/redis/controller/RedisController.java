@@ -1,7 +1,7 @@
 package com.wei.redis.controller;
 
 import com.wei.model.User;
-import com.wei.redis.service.RedisService;
+import com.wei.redis.service.RedisService1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
@@ -20,10 +20,12 @@ import java.util.List;
 @RestController
 public class RedisController {
 
+  /*  @Autowired
+    private RedisService redisService;*/
     @Autowired
-    private RedisService redisService;
+    private RedisService1 redisService1;
 
-    @RequestMapping("/setKey")
+   /* @RequestMapping("/setKey")
     public void setKey(String key,String value){
         redisService.setStr(key,value);
     }
@@ -38,5 +40,10 @@ public class RedisController {
     @RequestMapping("/getObjectKey")
     public Object getObjectKey(Object key){
         return redisService.getObj(key);
+    }
+*/
+    @RequestMapping("/setKey1")
+    public void setKey1(String key,String value){
+        redisService1.saveLiked2Redis(key,value);
     }
 }
