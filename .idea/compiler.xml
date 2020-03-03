@@ -10,6 +10,7 @@
         <module name="api" />
         <module name="config-server" />
         <module name="model" />
+        <module name="monitor" />
         <module name="mq" />
         <module name="order" />
         <module name="pay" />
@@ -26,6 +27,7 @@
       <module name="api" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="model" target="1.8" />
+      <module name="monitor" target="1.8" />
       <module name="mq" target="1.8" />
       <module name="order" target="1.8" />
       <module name="pay" target="1.8" />
@@ -44,6 +46,7 @@
       <module name="api" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="model" options="-parameters" />
+      <module name="monitor" options="-parameters" />
       <module name="mq" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="pay" options="-parameters" />

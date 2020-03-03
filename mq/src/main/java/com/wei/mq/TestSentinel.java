@@ -16,7 +16,7 @@ import java.util.List;
  * @Description:
  * @Version:1.0
  */
-public class Test {
+public class TestSentinel {
     public static void main(String[] args) {
         initFlowRules();
         while (true) {
