@@ -1,4 +1,4 @@
-package com.wei.mq;
+package com.wei.web.sentinel;
 
 import com.alibaba.csp.sentinel.Entry;
 import com.alibaba.csp.sentinel.SphU;
