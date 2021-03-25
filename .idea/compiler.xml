@@ -2,37 +2,46 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ai" />
-        <module name="api" />
-        <module name="config-server" />
-        <module name="model" />
-        <module name="monitor" />
-        <module name="mq" />
-        <module name="order" />
-        <module name="pay" />
-        <module name="redis" />
-        <module name="search" />
         <module name="server" />
-        <module name="user" />
-        <module name="web" />
+        <module name="mq" />
+        <module name="ai" />
+        <module name="pay" />
+        <module name="monitor" />
         <module name="zuul" />
+        <module name="bid-server" />
+        <module name="redis" />
+        <module name="config-server" />
+        <module name="search" />
+        <module name="security" />
+        <module name="web" />
+        <module name="model" />
+        <module name="api" />
+        <module name="user" />
+        <module name="gateway" />
+        <module name="order" />
+        <module name="rdm-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ai" target="1.8" />
       <module name="api" target="1.8" />
+      <module name="bid-server" target="1.8" />
       <module name="config-server" target="1.8" />
+      <module name="gateway" target="1.5" />
       <module name="model" target="1.8" />
       <module name="monitor" target="1.8" />
       <module name="mq" target="1.8" />
       <module name="order" target="1.8" />
       <module name="pay" target="1.8" />
+      <module name="rdm-server" target="1.8" />
       <module name="redis" target="1.8" />
       <module name="search" target="1.8" />
+      <module name="security" target="1.8" />
       <module name="server" target="1.8" />
       <module name="shop" target="1.8" />
       <module name="user" target="1.8" />
@@ -44,14 +53,18 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ai" options="-parameters" />
       <module name="api" options="-parameters" />
+      <module name="bid-server" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="gateway" options="" />
       <module name="model" options="-parameters" />
       <module name="monitor" options="-parameters" />
       <module name="mq" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="pay" options="-parameters" />
+      <module name="rdm-server" options="-parameters" />
       <module name="redis" options="-parameters" />
       <module name="search" options="-parameters" />
+      <module name="security" options="-parameters" />
       <module name="server" options="-parameters" />
       <module name="user" options="-parameters" />
       <module name="web" options="-parameters" />

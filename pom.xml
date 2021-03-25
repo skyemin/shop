@@ -45,6 +45,9 @@
         <module>user</module>
         <module>web</module>
         <module>zuul</module>
+        <module>security</module>
+        <module>gateway</module>
+        <module>rdm-server</module>
     </modules>
 
     <properties>
